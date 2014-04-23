@@ -72,5 +72,25 @@ input, input[type="text"], input[type="password"] {
 #footer {
 	background-color: #D5D3D3;
 	clear: both;
+	font-size: 12px;
 	padding: 10px;
+}
+
+#footer h6 {
+	font-weight: bold;
+}
+
+#footer li {
+	list-style-type: none;
+	margin-bottom: 8px;
+	font-size: 12px;
+}
+
+.social {
+	margin-left: 0px;
+}
+
+.social li {
+	float: left;
+	margin-right: 10px;
 }

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ===============================
+	Global Styles
+================================*/
+html {
+	font-size: 14px !important;
+}
+
+input, input[type="text"], input[type="password"] {
+	max-height: 32px;
+}
+
+/* ===============================
+	Header Styles
+================================*/
+
+.header h1, .header h2, .header h3, .header h4, .header h5 {
+	color: #FFF;
+}
+
+.header {
+	background-color: #1e1e1e;
+	padding: 5px 0;
+	max-height: 65px;
+}
+
+.header form {
+	float: right;
+}
+
+.logo {
+	max-width: 206px;
+	max-height: 50px;
+}
+
+/* ===============================
+	Hero Styles
+================================*/
+
+#hero { 
+	background-image: url(../img/getliveworkforce_featured-1280x450@2x.jpg);
+	background-size: 100% 455px;
+	height: 450px;
+	width: 100%;
+}
+
+/* ===============================
+	Blog Styles
+================================*/
+
+#post_excerpt { 
+	border: 1px solid #CCC;
+	float: left;
+	height: 270px;
+	width: 220px;
+}
+
+#post_excerpt img {
+	border-bottom: 4px solid #5889DA;
+}
+
+#post_excerpt p, #post_excerpt h5 {
+	padding: 10px;
+}
+
+/* ===============================
+	Footer Styles
+================================*/
+
+#footer {
+	background-color: #D5D3D3;
+	clear: both;
+	padding: 10px;
+}

@@ -13,8 +13,38 @@ input[type="button"], input[type="submit"] {
 	font-weight: bold;
 }
 
-input, input[type="text"], input[type="password"] {
-	max-height: 32px;
+.client-logos {
+	margin-left: 0;
+}
+
+.client-logos li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2px 0 0;
+}
+
+/* ===============================
+	Custom Form Styles
+================================*/
+#front_search form label {
+	font-weight: bold;
+}
+
+#front_search form small {
+	font-size: 10px;
+	font-style: italic;
+	font-weight: normal !important;
+	color: #999;
+}
+
+#advanced_search_link {
+	clear: right;
+	font-size: 12px;
+	float: right;
+}
+
+#advanced_search {
+	float: left;
 }
 
 /* ===============================
@@ -51,6 +81,45 @@ input, input[type="text"], input[type="password"] {
 	width: 100%;
 }
 
+.testimonial {
+	bottom: -110px;
+	color: #FFF;
+	position: absolute;
+	width: 53%;
+}
+.testimonial p { font-size: 16px; font-weight: bold; }
+.testimonial p:before { content: '"'; }
+.testimonial p:after { content: '"'; }
+.testimonial small { font-size: 14px; float: right; }
+.testimonial small:before { content: "- "; }
+
+/* ===============================
+	Listings Styles
+================================*/
+
+#listings {
+	width: 100%;
+}
+
+#listings small {
+	font-size: 10px !important;
+}
+
+.job-title {
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+#listings #location {
+	margin-top: 20px;
+}
+
+.status {
+	border: 1px solid #CCC;
+	padding: 5px 10px;
+	text-align: center;
+}
+
 /* ===============================
 	Blog Styles
 ================================*/
@@ -58,16 +127,21 @@ input, input[type="text"], input[type="password"] {
 #post_excerpt { 
 	border: 1px solid #CCC;
 	float: left;
-	height: 270px;
-	width: 220px;
+	height: 300px;
+	width: 180px;
 }
 
 #post_excerpt img {
 	border-bottom: 4px solid #5889DA;
 }
 
-#post_excerpt p, #post_excerpt h5 {
-	padding: 10px;
+#post_excerpt h5 {
+	font-weight: bold;
+	padding: 10px 10px 0 10px;
+	margin-bottom: 5px;
+}
+#post_excerpt p {
+	padding: 0 10px 10px 10px;
 }
 
 /* ===============================

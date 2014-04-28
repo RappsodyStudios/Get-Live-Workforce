@@ -3215,8 +3215,8 @@ dialog, .reveal-modal {
     margin-bottom: 0; }
   @media only screen and (min-width: 40.063em) {
     dialog, .reveal-modal {
-      margin-left: -40%;
-      width: 80%; } }
+      margin-left: -16%;
+      width: 30%; } }
   @media only screen and (min-width: 40.063em) {
     dialog, .reveal-modal {
       top: 6.25rem; } }

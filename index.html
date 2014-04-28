@@ -15,14 +15,14 @@
           <div class="large-12 columns">
             <img class="logo" src="img/Workforce_Logo-206x50.png" width="100%" height="auto">
             <form>
-            	<div class="small-6 columns left">
+            	<div class="small-4 columns left">
         			<input type="text" placeholder="Username" />
     			</div>
-              	<div class="small-6 columns left">
+              	<div class="small-4 columns left">
               		<input type="password" placeholder="Password" />
               	</div>
-              	<div class="small-4 columns right">
-              		<input type="submit" class="small button" value="Sign-in">
+                <div class="small-2 columns right">
+                    <input type="button" class="small button disabled right" value="Sign-in">
               	</div>
             </form>
           </div>
@@ -34,11 +34,12 @@
           <div class="large-12 columns">
             <div id="front_search" class="right large-5 columns callout panel">
             	<h5>Take the next step to finding your career</h5>
-              
+              	<br>
+                
               <form>
               		<div class="row">
               		<div class="large-12 columns">
-                  	<label>Job
+                  	<label>Job <small>(eg; Camera Operator or Sales)</small>
         					<input type="text" placeholder="Job title, keyword, or employer" />
                      	</label>
                   </div>
@@ -46,7 +47,7 @@
                   
                   <div class="row">
                   <div class="large-12 columns">
-                  	<label>Location
+                  	<label>Location <small>(eg; Gainesville, FL or 32606)</small>
         					<input type="text" placeholder="City, state, or ZIP" />
                      	</label>
                  </div>
@@ -63,14 +64,71 @@
 				      </select>
 				    </div>
                   
-                  <div class="large-4 columns right">
+                  <div class="large-5 columns right" style="margin-top: 10px;">
               			<input type="submit" class="small button" value="Find Jobs">
               		</div>
                   
-                  <a href="#">Advanced Search</a>
+                  <a href="#" id="advanced_search_link">Advanced Search</a>
+                  
+                  <div id="advanced_search" class="row">
+                  		<div class="row">
+                  		<div class="left">
+                            <label>Located Within</label>
+                            <select>
+                                <option value="5miles">5 miles</option>
+                                <option value="10miles">10 miles</option>
+                                <option value="20miles">20 miles</option>
+                                <option value="30miles">30 miles</option>
+                            </select>
+                        </div>
+                        
+                        <div class="right">
+                            <label>Degree</label>
+                            <select>
+                                <option value="noDegree">Not specified</option>
+                                <option value="10miles">10 miles</option>
+                                <option value="20miles">20 miles</option>
+                                <option value="30miles">30 miles</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row">
+                        	<div class="large-6 columns left">
+                              <label>Employment Type</label>
+                              <input id="jobtype1" type="checkbox"><label for="jobtype1">Full-time</label>
+                              <input id="jobtype2" type="checkbox"><label for="jobtype2">Part-time</label>
+                              <input id="jobtype3" type="checkbox"><label for="jobtype3">Contractor</label>
+                              <input id="jobtype4" type="checkbox"><label for="jobtype4">Internship</label>
+                              <input id="jobtype5" type="checkbox"><label for="jobtype5">Seasonal</label>
+    						</div>
+                        </div>
+                  </div>
                  </div>
               </form>
             </div>
+            
+            <div class="testimonial">
+                <!-- Quote Generator -->
+                <script language="JavaScript">
+                    var Quotation=new Array()
+                    
+                    Quotation[0] = "<p>Get Live Workforce helped me land the job of my dreams.</p>" + "<small>James F. Hoelzel</small>";
+                    Quotation[1] = "<p>Over the past 9 months we have seen a reduced electric bill of over $16,000, which is approximately a 19% savings from the same period last year.</p>" + "<small>Marlyn Schwartz</small>";
+                    Quotation[2] = "<p>The completed project exceeded my expectations in the increased brightness and the noticeably cleaner white lights. The colors on our merchandise are really enhanced by the improved lighting.</p>" + "<small>James Plucknett</small>";
+                    /*Quotation[3] = "<p>On a number of projects, Energy Pro 2020 was efficient and ahead of schedule. Any problems were solved quickly and reasonably.</p>" + "<small>Ryan McEwen, Voss Lighting, Lincoln, NE</small>";
+                    Quotation[4] = "<p>Even with difficult tenants or maintenance personnel, Energy Pro 2020 professionally completed every aspect of the project and left our customers pleased with the results.</p>" + "<small>Ryan McEwen, Voss Lighting, Lincoln, NE</small>";*/
+    
+                    var Q = Quotation.length;
+                    var whichQuotation=Math.round(Math.random()*(Q-1));
+                    function showQuotation(){
+                        document.write(Quotation[whichQuotation]);
+                    }
+                    
+                    showQuotation();
+                </script>
+                <!-- end of generator-->
+        	</div>
           </div>
         </div>
     </div>
@@ -79,11 +137,58 @@
     	<div class="row">
         <h3 class="left">Still not a member yet? Sign-up today</h3>
         
-        <a href="#" class="medium button right">Connect with Facebook</a>
-        <a href="#" class="medium success button right">Join Our Workforce</a>
+        <a class="medium disabled button right" href="#" style="margin: 2px 0 0 5px;">Connect with Facebook</a>
+        <a class="medium success button right" href="#" data-reveal-id="myModal" style="margin: 2px 0 0 0;">Join Our Workforce</a>
         </div>
     </div>
     
+    <div id="myModal" class="reveal-modal" data-reveal>
+  		<h3>Let's get started</h3>
+        <br>
+  		<form class="sign-up row">
+        	<div class="row">
+            	<div class="large-6 columns">
+        			<input type="text" placeholder="First Name" />
+                </div>
+                <div class="large-6 columns">
+        			<input type="text" placeholder="Last Name" />
+                </div>
+            </div>   
+            <div class="row">
+            	<div class="large-12 columns">
+        			<input type="email" placeholder="Email Address" />
+                </div>
+            </div> 
+            <div class="row">
+            	<div class="large-12 columns">
+        			<input type="password" placeholder="Password" />
+                </div>
+            </div>
+            <div class="row">
+            	<div class="large-12 columns">
+        			<input type="password" placeholder="Re-type Password" />
+                </div>
+            </div>
+             <div class="row">
+            	<div class="large-12 columns">
+        			<input id="newsSignUp" type="checkbox"><label for="newsSignUp">Tell me about new job opportunities and news</label>
+                </div>
+                <br><br>
+            </div>
+            <div class="row">
+            	<div class="large-12 columns">
+                	<p>By clicking "Sign me up" you confirm that you accept the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p> 
+                </div>
+            </div>
+            <div class="row">
+            	<div class="large-12 columns">
+            		<input type="submit" class="button expand" value="Sign Me Up">
+                </div>
+            </div>
+        </form>
+  		<a class="close-reveal-modal">&#215;</a>
+	</div>
+    <br>
     <div class="row">
     	<div class="large-9 columns">
     	<h4>Recent Listings</h4>
@@ -95,13 +200,13 @@
                 <i class="fa fa-building-o fa-3x">&nbsp;</i>
               	</div>
               	
-              <div class="large-6 columns">
-              		<p>Job Title</p>
-                  <small>Company Name <span>Company Description</span></small>
+              <div class="large-4 columns">
+              	  <p class="job-title">Interactive Producer</p>
+                  <small>Company Name</small>
               </div>
               
-              <div class="small-2 columns">
-              		<i class="fa fa-map-marker fa-lg">Brooklyn, NY</i>
+              <div id="location" class="small-4 columns">
+              		<i class="fa fa-map-marker fa-lg">&nbsp;Brooklyn, NY</i>
               </div>
               
               <div class="small-2 columns">
@@ -117,13 +222,13 @@
                 <i class="fa fa-building-o fa-3x">&nbsp;</i>
               	</div>
               	
-              <div class="large-6 columns">
-              		<p>Job Title</p>
-                  <small>Company Name <span>Company Description</span></small>
+              <div class="large-4 columns">
+              	  <p class="job-title">Sr. Ruby on Rails Developer</p>
+                  <small>Company Name</small>
               </div>
               
-              <div class="large-2 columns">
-              		<i class="fa fa-map-marker fa-lg">Brooklyn, NY</i>
+              <div id="location" class="small-4 columns">
+              		<i class="fa fa-map-marker fa-lg">&nbsp;Alanta, GA</i>
               </div>
               
               <div class="large-2 columns">
@@ -139,13 +244,13 @@
                 <i class="fa fa-building-o fa-3x">&nbsp;</i>
               	</div>
               	
-              <div class="large-6 columns">
-              		<p>Job Title</p>
-                  <small>Company Name <span>Company Description</span></small>
+              <div class="large-4 columns">
+              		<p class="job-title">Interactive Designer for Mobile</p>
+                  <small>Company Name</small>
               </div>
               
-              <div class="large-2 columns">
-              		<i class="fa fa-map-marker fa-lg">Brooklyn, NY</i>
+              <div id="location" class="small-4 columns">
+              		<i class="fa fa-dot-circle-o fa-lg">&nbsp;Anywhere</i>
               </div>
               
               <div class="large-2 columns">
@@ -157,8 +262,14 @@
        </table> 
        </div>
        
-       <div class="large-3 columns">
-       		<img src="http://placehold.it/250x250">
+       <div class="large-3 columns" style="margin-top: 38px;">
+       		<div class="row">
+       			<img src="http://placehold.it/325x220">
+            </div>
+            <br><br>
+            <div class="row">
+            	<a href="" class="button expand">View More Jobs</a>
+            </div>
        </div>
     </div>
     
@@ -176,22 +287,26 @@
         <div class="medium-5 columns">
         	<div class="row">
             <ul class="client-logos">
-            	<li></li>
+            	<li><img src="http://placehold.it/110x90"></li>
+                <li><img src="http://placehold.it/150x90"></li>
+                <li><img src="http://placehold.it/90x90"></li>
+                <br><br>
+                <li><img src="http://placehold.it/170x90"></li>
+                <li><img src="http://placehold.it/90x90"></li>
+                <li><img src="http://placehold.it/90x90"></li>
             </ul>
            </div>
            <div class="row">
            	<div id="post_excerpt" class="left"> 
-            		<img src="http://placehold.it/230x140">
+            		<img src="http://placehold.it/180x140">
                   <h5>Post Title</h5>
-                  
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad..</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt..</p>
             	</div>
                 
               <div id="post_excerpt" class="right">
-            		<img src="http://placehold.it/230x140">
+            		<img src="http://placehold.it/180x140">
                   <h5>Post Title</h5>
-                  
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad..</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt..</p>
             	</div>
            </div>
         </div>
@@ -279,5 +394,6 @@
     <script>
       $(document).foundation();
     </script>
+    <script src="js/app.js"></script>
   </body>
 </html>

@@ -32,6 +32,28 @@
     <div id="hero">
         <div class="row">
           <div class="large-12 columns">
+          	 <div class="testimonial">
+                <!-- Quote Generator -->
+                <script language="JavaScript">
+                    var Quotation=new Array()
+                    
+                    Quotation[0] = "<p>Get Live Workforce helped me land the job of my dreams.</p>" + "<small>James F. Hoelzel</small>";
+                    Quotation[1] = "<p>Over the past 9 months we have seen a reduced electric bill of over $16,000, which is approximately a 19% savings from the same period last year.</p>" + "<small>Marlyn Schwartz</small>";
+                    Quotation[2] = "<p>The completed project exceeded my expectations in the increased brightness and the noticeably cleaner white lights. The colors on our merchandise are really enhanced by the improved lighting.</p>" + "<small>James Plucknett</small>";
+                    /*Quotation[3] = "<p>On a number of projects, Energy Pro 2020 was efficient and ahead of schedule. Any problems were solved quickly and reasonably.</p>" + "<small>Ryan McEwen, Voss Lighting, Lincoln, NE</small>";
+                    Quotation[4] = "<p>Even with difficult tenants or maintenance personnel, Energy Pro 2020 professionally completed every aspect of the project and left our customers pleased with the results.</p>" + "<small>Ryan McEwen, Voss Lighting, Lincoln, NE</small>";*/
+    
+                    var Q = Quotation.length;
+                    var whichQuotation=Math.round(Math.random()*(Q-1));
+                    function showQuotation(){
+                        document.write(Quotation[whichQuotation]);
+                    }
+                    
+                    showQuotation();
+                </script>
+                <!-- end of generator-->
+        	</div>
+            
             <div id="front_search" class="right large-5 columns callout panel">
             	<h5>Take the next step to finding your career</h5>
               	<br>
@@ -68,67 +90,58 @@
               			<input type="submit" class="small button" value="Find Jobs">
               		</div>
                   
-                  <a href="#" id="advanced_search_link">Advanced Search</a>
+                  <dl class="accordion" data-accordion>
+                  	<dd>
+                  		<a href="#advanced_search" id="advanced_search_link">Advanced Search</a>
                   
-                  <div id="advanced_search" class="row">
-                  		<div class="row">
-                  		<div class="left">
-                            <label>Located Within</label>
-                            <select>
-                                <option value="5miles">5 miles</option>
-                                <option value="10miles">10 miles</option>
-                                <option value="20miles">20 miles</option>
-                                <option value="30miles">30 miles</option>
-                            </select>
-                        </div>
+                  		<div id="advanced_search" class="row content">
+                  			<div class="row">
+                  			<div class="left" style="margin-right: 20px;">
+                                <label>Located Within</label>
+                                <select>
+                                    <option value="5miles">5 miles</option>
+                                    <option value="10miles">10 miles</option>
+                                    <option value="20miles">20 miles</option>
+                                    <option value="30miles">30 miles</option>
+                                </select>
+                        		</div>
                         
-                        <div class="right">
+                        <div class="left">
                             <label>Degree</label>
                             <select>
                                 <option value="noDegree">Not specified</option>
-                                <option value="10miles">10 miles</option>
-                                <option value="20miles">20 miles</option>
-                                <option value="30miles">30 miles</option>
+                                <option value="HighSchool">High School</option>
+                                <option value="Associates">Associates Degree</option>
+                                <option value="Bachelors">Bachelors Degree</option>
+                                <option value="Masters">Masters Degree</option>
+                                <option value="Doctorate">Doctorate Degree</option>
                             </select>
                         </div>
                         </div>
                         
                         <div class="row">
-                        	<div class="large-6 columns left">
+                        	<div id="employment_type" class="large-6 columns left">
                               <label>Employment Type</label>
-                              <input id="jobtype1" type="checkbox"><label for="jobtype1">Full-time</label>
-                              <input id="jobtype2" type="checkbox"><label for="jobtype2">Part-time</label>
-                              <input id="jobtype3" type="checkbox"><label for="jobtype3">Contractor</label>
-                              <input id="jobtype4" type="checkbox"><label for="jobtype4">Internship</label>
-                              <input id="jobtype5" type="checkbox"><label for="jobtype5">Seasonal</label>
+                              <table>
+                              	<tr>
+                                		<td><input id="jobtype1" type="checkbox"><label for="jobtype1">Full-time</label></td>
+                                    <td><input id="jobtype2" type="checkbox"><label for="jobtype2">Part-time</label></td>
+                              		<td><input id="jobtype3" type="checkbox"><label for="jobtype3">Contractor</label></td>
+                                </tr>
+                                <tr>
+                              		<td><input id="jobtype4" type="checkbox"><label for="jobtype4">Internship</label></td>
+                              		<td><input id="jobtype5" type="checkbox"><label for="jobtype5">Seasonal</label></td>
+                                </tr>
+                            </table>
     						</div>
                         </div>
                   </div>
                  </div>
+                 </dd>
+                 </dl>
               </form>
             </div>
             
-            <div class="testimonial">
-                <!-- Quote Generator -->
-                <script language="JavaScript">
-                    var Quotation=new Array()
-                    
-                    Quotation[0] = "<p>Get Live Workforce helped me land the job of my dreams.</p>" + "<small>James F. Hoelzel</small>";
-                    Quotation[1] = "<p>Over the past 9 months we have seen a reduced electric bill of over $16,000, which is approximately a 19% savings from the same period last year.</p>" + "<small>Marlyn Schwartz</small>";
-                    Quotation[2] = "<p>The completed project exceeded my expectations in the increased brightness and the noticeably cleaner white lights. The colors on our merchandise are really enhanced by the improved lighting.</p>" + "<small>James Plucknett</small>";
-                    /*Quotation[3] = "<p>On a number of projects, Energy Pro 2020 was efficient and ahead of schedule. Any problems were solved quickly and reasonably.</p>" + "<small>Ryan McEwen, Voss Lighting, Lincoln, NE</small>";
-                    Quotation[4] = "<p>Even with difficult tenants or maintenance personnel, Energy Pro 2020 professionally completed every aspect of the project and left our customers pleased with the results.</p>" + "<small>Ryan McEwen, Voss Lighting, Lincoln, NE</small>";*/
-    
-                    var Q = Quotation.length;
-                    var whichQuotation=Math.round(Math.random()*(Q-1));
-                    function showQuotation(){
-                        document.write(Quotation[whichQuotation]);
-                    }
-                    
-                    showQuotation();
-                </script>
-                <!-- end of generator-->
-        	</div>
           </div>
         </div>
     </div>

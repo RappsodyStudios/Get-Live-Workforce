@@ -45,6 +45,27 @@ input[type="button"], input[type="submit"] {
 
 #advanced_search {
 	float: left;
+	max-height: 125px;
+	overflow: hidden;
+}
+
+#employment_type table {
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#employment_type tr {
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+
+#employment_type td {
+	padding: 0;
+	min-width: 30px;
 }
 
 /* ===============================
@@ -82,7 +103,7 @@ input[type="button"], input[type="submit"] {
 }
 
 .testimonial {
-	bottom: -110px;
+	top: 335px;
 	color: #FFF;
 	position: absolute;
 	width: 53%;

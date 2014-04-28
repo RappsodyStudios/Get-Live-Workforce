@@ -114,6 +114,10 @@ input[type="button"], input[type="submit"] {
 .testimonial small { font-size: 14px; float: right; }
 .testimonial small:before { content: "- "; }
 
+@media screen and (max-width: 600px) {
+	.testimonial { display: none; }
+}
+
 /* ===============================
 	Listings Styles
 ================================*/

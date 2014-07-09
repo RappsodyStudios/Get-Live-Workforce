@@ -96,8 +96,11 @@ input[type="button"], input[type="submit"] {
 ================================*/
 
 #hero { 
-	background-image: url(../img/getliveworkforce_featured-1280x450@2x.jpg);
-	background-size: 100% 455px;
+	/*background-image: url(../img/getliveworkforce_featured-1280x450@2x.jpg);*/
+	background-image: url(../img/GLWorkforce_homepage.jpg);
+	background-position: 0 -35px;
+	background-repeat: no-repeat;
+	background-size: 100% 600px;
 	height: 450px;
 	width: 100%;
 }

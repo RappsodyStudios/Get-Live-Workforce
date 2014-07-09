@@ -158,10 +158,11 @@
     <div id="myModal" class="reveal-modal" data-reveal>
   		<h3>Let's get started</h3>
         <br>
-  		<form class="sign-up row">
+  		<form class="sign-up row" data-abide>
         	<div class="row">
             	<div class="large-6 columns">
-        			<input type="text" placeholder="First Name" />
+        			<input type="text" placeholder="First Name" required pattern="[a-zA-Z]+"/>
+                 	<small class="error">What did your mother name you?</small>
                 </div>
                 <div class="large-6 columns">
         			<input type="text" placeholder="Last Name" />
